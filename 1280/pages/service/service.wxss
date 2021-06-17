@@ -1,0 +1,105 @@
+/* pages/service/service.wxss */
+.mycontainer {
+  background: #F3F3F3;
+  padding-bottom: 100rpx;
+  min-height: 1111rpx;
+}
+.nav {
+  background: white;
+  padding: 32rpx;
+}
+
+.header {
+  background: white;
+  border-top: 2rpx solid #FBFBFB;
+  height: 140rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.head-item {
+  width: 100rpx;
+  height: auto;
+  margin: 25rpx;
+  display: inline-block;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.card {
+  margin: 20rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid white;
+  background: white;
+  padding: 4rpx 20rpx;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0;
+}
+.smallicon {
+  max-width: 50rpx;
+  max-height: 80%;
+}
+.card-header {
+  height: 60rpx;
+  line-height: 46rpx;
+}
+.card-name {
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}
+.card-time {
+  color: #C6C6C6;
+  float: right;
+  font-size: 24rpx;
+}
+.card-info {
+  
+}
+.card-footer {
+  border-top: 2rpx solid #FAFAFA;
+  font-size: 20rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.divLine {
+  background: #E5E5E5;
+  height: 2rpx;
+  width: 34%;
+  display: inline-block;
+  text-align: center;
+  line-height: 5rpx;
+}
+
+
+.gray {
+  color: #B6B6B6;
+}
+.small {
+  font-size: 0.8em;
+}
+.big {
+  font-size: 2em;
+}
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: 600;
+}
+.inline-block {
+  display: inline-block;
+}
+
+.biggap {
+  margin: 50rpx;
+}
+.gap {
+  margin: 30rpx;
+}
+.smallgap {
+  margin: 10rpx;
+}

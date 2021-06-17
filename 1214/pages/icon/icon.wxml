@@ -1,0 +1,69 @@
+<!--pages/icon/icon.wxml-->
+<text>pages/icon/icon.wxml</text>
+<view>图标</view>
+<view>
+  <icon type="success" size="50"></icon>
+  <icon type="success_no_circle" size="50"></icon>
+  <icon type="info" size="50"></icon>
+  <icon type="info_no_circle" size="50"></icon>
+  <icon type="warn" size="50"></icon>
+  <icon type="waiting" size="50"></icon>
+  <icon type="waiting_circle" size="50"></icon>
+  <icon type="cancel" size="50"></icon>
+  <icon type="download" size="50"></icon>
+  <icon type="search" size="50"></icon>
+  <icon type="clear" size="50"></icon>
+</view>
+
+<!-- 进度条progress -->
+<view>进度条progress</view>
+<progress percent="50" show-info > </progress>
+<progress percent="50" stroke-width="3"> </progress>
+<progress percent="88" activeColor="pink" bindactiveend="end"> </progress>
+
+<!-- 表单form -->
+<form>
+  <input password="true" placeholder="请输入密码" type="text"/>
+  <!-- checkbox/label -->
+  <checkbox-group bindchange="checkboxChange">
+    <label wx:for="{{items}}" wx:key="index">
+        <checkbox checked="{{item.checked}}" disabled="{{item.disabled}}" color="blue" value="{{item.value}}">
+          {{item.name}} 
+        </checkbox>
+    </label>
+  </checkbox-group>
+  <!-- switch开关 -->
+  <switch checked="true" bindchange="switch1Change">开关1</switch>
+  <switch bindchange="switch2Change">开关2</switch>
+  <button form-type="subbmit" type="primary">提交</button>
+  <button form-type="reset" >重置</button>
+</form>
+
+
+
+  <!-- 普通选择器 -->
+  <view>
+  <picker mode="selector" bindchange="bindPickerChange" value="index" range="{{array}}">
+    <view>
+      普通选择器: {{array[index]}}
+    </view>
+  </picker>
+</view>
+<!-- 时间选择器	-->
+<view>
+  <picker mode="time" bindchange="bindTimeChange">
+      <view>时间选择器: {{time}}</view>
+  </picker>
+</view>
+<!-- 日期选择器 -->
+<view>
+  <picker mode="date" bindchange="bindDateChange">
+    <view>日期选择器: {{date}}</view>
+  </picker>
+</view>
+<!-- 地区选择器 -->
+<view>
+  <picker mode="region" bindchange="bindRegionChange">
+    <view>地区选择器: {{region[0]}} {{region[1]}} {{region[2]}}</view>
+  </picker>
+</view>

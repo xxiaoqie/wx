@@ -1,0 +1,27 @@
+<!--pages/jfsc/jfsc.wxml-->
+<view style="padding:30rpx">
+  <view>
+    <swiper class="banner" autoplay="true" circular="true" interval="3000" indicator-dots="true">
+      <swiper-item>
+        <image style="width:100%" src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2771978851,2906984932&fm=26&gp=0.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image style="width:100%" src="http://n.sinaimg.cn/photo/transform/700/w1000h500/20201106/1ad8-kcpxnwv8925892.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view>
+    <image src="/images/1.png"  style="width:100%; height:300rpx;"></image>
+  </view>
+  <view>
+    <text style="font-weight:600;">热门商品</text>
+    <view style="width:100%">
+      <view class="box" wx:for="{{hotshops}}">
+        <image src="{{item.src}}" style="max-width:100%;max-height:300rpx;"></image>
+        <view class="name">{{item.name}}</view>
+        <text class="tag">支持积分抵扣</text>
+        <view class="price">{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

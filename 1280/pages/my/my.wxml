@@ -1,0 +1,26 @@
+<!--pages/my/my.wxml-->
+<view class="mycontainer">
+  <view class="header">
+    <view class="my" bindtap="click">我的</view>
+    <view class="userinfo">
+      <view wx:if="{{hasUserInfo}}">
+        <image bindtap="click" src="{{userInfo.avatarUrl}}" class="img"></image>
+        <view style="margin:1em 4em">
+          <text class="username">{{userInfo.nickName}}</text>
+          <text class="phonenum">{{userInfo.province}} {{userInfo.city}}</text>
+        </view>
+      </view>
+      <view wx:else>
+        <button open-type="getUserInfo" style="background:#1677FF;color:#1592FE;" bindgetuserinfo="getUserInfo"> 点击获取头像信息 </button>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="content-box" wx:for="{{myitems}}" wx:for-index="idx" wx:for-item="items">
+      <navigator open-type="navigate" url="{{item.to}}" class="content" wx:for="{{items.myitem}}"  wx-for-index="index" wx:for-item="item" hover-class="none">
+        <image src="{{item.image}}" class="icon"></image>
+        <text>{{item.text}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

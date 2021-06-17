@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/playmusic/playmusic",
+    "pages/default/default",
+    "pages/winpage/winpage",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "听歌识曲",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

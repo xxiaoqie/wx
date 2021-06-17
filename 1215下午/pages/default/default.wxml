@@ -1,0 +1,3 @@
+<!--pages/default/default.wxml-->
+<image src="/images/yindao.jpg" class="img"></image>
+<button class="btn" type="primary" size="default" bindtap="goplaymusic">进入游戏</button>

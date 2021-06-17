@@ -1,0 +1,62 @@
+<view class="allthing">
+<view class="background"></view>
+<!-- 第一层view -->
+<view class="square">
+  <view class="impmoney">
+  <view class="zje"><text >总金额（元）</text></view>
+  <view class="money">{{remainmoney}}</view>
+  <view class="tip">明日收益：0.5元</view>
+  </view>
+  <!-- modal框输入金额 -->
+  <modal id="modal" hidden="{{hiddenmodalput}}" title="存取" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" >
+ 切记！本余额宝无论存入多少钱，收益皆为0.5，本人实力不济，请慎重存入，谢谢配合！
+ <input type='number' placeholder="请输入金额：" auto-focus bindinput="putin"/>
+ </modal>
+<!-- modal框输出金额 -->
+ <modal id="modal2" hidden="{{hiddenmodalput1}}" title="取出" confirm-text="提交" cancel-text="取消" bindcancel="cancel2" bindconfirm="confirm2">
+  取吧取吧，一群白眼狼，娶了老婆忘了娘！
+  <input type='number' placeholder="请输入金额：" auto-focus bindinput="putin"/>
+ </modal>
+ <!-- 收益部分 -->
+<view class="all">
+  <view class="intotal">
+  <view class="text"><text>累计收益（元）</text></view>
+<view class="text1"><text >17.5</text></view>
+</view>
+<view class="everyday">
+    <view class="text"><text>今日收益（元）</text></view>
+<view class="text1"><text>0.500</text></view>
+</view>
+</view>
+
+<!-- 按钮部分 -->
+<view class="control">
+  <button class="btn" size="default" style="width:40%;height:65%" bindtap="out">转出</button>
+  <button class="btn1" size="default" style="width:40% ;height:65%" bindtap="in">转入</button>
+</view>
+</view>
+<!-- 第二层view -->
+<view class="scondsquare">
+  <swiper class="imgsall" id="banner" autoplay="true" interval="3000" indicator-dots="true">
+  <swiper-item>
+    <image class="imgs" src="/images/2.png" ></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="imgs" src="/images/3.png" ></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="imgs" src="/images/4.png" ></image>
+  </swiper-item>
+</swiper>
+</view>
+</view>
+
+<!-- 第三层view -->
+<view class="thirdsquare">
+  <image class="final" src="/images/5.png"></image>
+</view>
+<view class="zhushi" style="width=100%;heigth:300rpx">
+  <view class="jieshi1">
+<text class="jieshi2">最终解释权归加强钟离所有,存钱有风险，要存需谨慎</text>
+</view>
+</view>

@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/shoue/shoue",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF4500",
+    "navigationBarTitleText": "余额宝",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

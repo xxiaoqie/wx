@@ -1,0 +1,9 @@
+<!--pages/post/post.wxml-->
+<view>
+  <form bindsubmit="getData" bindreset="reset">
+    <input name="user" placeholder="用户名"></input>
+    <input name="pass" placeholder="密码" password="true123"></input>
+    <button type="primary" form-type="submit">提交</button>
+    <button form-type="reset">重置</button>
+  </form>
+</view>

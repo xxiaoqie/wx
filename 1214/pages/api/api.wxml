@@ -1,0 +1,5 @@
+<!--pages/api/api.wxml-->
+<button type="primary" bindtap="showToast">点击触发</button>
+<button type="primary" bindtap="showModal">模态框</button>
+<button type="primary" bindtap="showLoading">转圈圈</button>
+<button type="primary" bindtap="showActionSheet">菜单</button>

@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/test/test",
+    "pages/icon/icon",
+    "pages/api/api",
+    "pages/post/post",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "BLL",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

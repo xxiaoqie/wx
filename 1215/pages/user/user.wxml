@@ -1,0 +1,21 @@
+<!--pages/user/user.wxml-->
+<text>pages/user/user.wxml</text>
+
+<!-- 轮播图 -->
+<swiper id="banner" autoplay="true" circular="true" interval="3000" indicator-dots="true">
+  <swiper-item>
+    <image src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2771978851,2906984932&fm=26&gp=0.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="http://n.sinaimg.cn/photo/transform/700/w1000h500/20201106/1ad8-kcpxnwv8925892.png"></image>
+  </swiper-item>
+</swiper>
+
+<!-- 页面跳转 -->
+<navigator url="../index/index" open-type="switchTab">你好呀</navigator>
+<!-- 当进入到页面的时候，获取到用户信息，若无去登录 -->
+<view class="container">
+  <view>
+    用户名：{{username}}
+  </view>
+</view>

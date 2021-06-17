@@ -1,0 +1,35 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+
+<view>div</view>
+<text>span</text>
+<button size="default" type="primary" plain="true" disabled="false">aaaaa</button>
+<button size="mini" type="warn" plain="true" loading="true">{{btn2}}</button>
+
+<!-- bindtap 点击事件 edit函数名 -->
+<button type="primary" bindtap="edit">点击事件</button>
+
+<!-- 小程序的视图和渲染 -->
+<!-- 静态渲染 wx:if判断 -->
+<view wx:if="{{true}}">
+  <text>静态页面</text>
+</view>
+
+<!-- 动态渲染 -->
+<button type="primary" bindtap="toggle">切换</button>
+<view wx:if="{{isShow}}">
+  <text>动态页面</text>
+</view>
+
+<!-- 循环 wx:for -->
+<view wx:for="{{list}}" wx:key="index">
+  <text>{{item}} -- {{index}}</text>
+</view>
+
+<!-- data- 自定义属性，方便添加数据和属性 -->
+
+<!-- currentTarget 绑定事件的组件 -->
+<!-- dataset设置额外的属性 -->
+<view id="view1" data-id="000" data-title="标题" bindtap="view1">
+  view1
+</view>

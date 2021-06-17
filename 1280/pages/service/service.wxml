@@ -1,0 +1,59 @@
+<!--pages/service/service.wxml-->
+<view class="mycontainer">
+  <view class="nav">
+    <text> 服务提醒</text>
+  </view>
+  <view class="header">
+    <scroll-view scroll-x="true" enable-flex="true" style="width: auto;overflow:hidden;">
+      <label wx:for="{{myitems}}" wx:for-index="idx" wx:for-item="items">
+        <navigator hover-class="none" class="head-item" url="{{item.to}}" open-type="navigate" wx:for="{{items.myitem}}"  wx-for-index="index" wx:for-item="item">
+          <image class="icon" src="{{item.image}}"></image>
+          <view>{{item.text}}</view>
+        </navigator>
+      </label>
+    </scroll-view>
+  </view>
+  <view class="body">
+    <navigator class="card" bindlongpress="handleLongPress" wx:if="{{!cards.cover}}" hover-class="none" open-type="navigate" url="{{cards.to}}" wx:for="{{cardsnow}}" data-now="{{1}}" data-index="{{idx}}" data-name="{{cards.name}}" wx:for-index="idx" wx:for-item="cards" wx:key="cards">
+      <view class="card-header">
+        <image class="smallicon" style="float:left;" src="{{cards.icon}}"></image>
+        <text class="card-name">{{cards.name}}</text>
+        <text class="card-time">{{cards.time}}</text>
+      </view>
+      <view class="card-body">
+        <view class="card-info">
+          <view style=" display: flex;justify-content: center;"><image wx:if="{{cards.hasimage}}" src="{{cards.image}}" class="{{cards.class}}"></image></view>
+          <view wx:for="{{cards.info}}" wx:for-index="index" wx:for-item="infos" class="{{infos.class}}">{{infos.text}}</view>
+        </view>
+      </view>
+      <view class="card-footer">
+        <text>查看详情</text>
+        <text style="float:right;">＞</text>
+      </view>
+    </navigator>
+
+    <view style="text-align:center;" wx:if="{{cntbefore > 0}}">
+      <view class="divLine"></view>
+      <text style="line-height:2rpx;color:#A2A2A2; font-size:24rpx; margin: 40rpx 20rpx; display:inline-block;">以下消息你看过了</text>
+      <view class="divLine"></view>
+    </view>
+
+    <navigator wx:if="{{!cards.cover}}" bindlongpress="handleLongPress" class="card" hover-class="none" open-type="navigate" url="{{cards.to}}"  wx:for="{{cardsbefore}}" wx:for-index="idx" wx:for-item="cards" data-now="{{0}}" data-index="{{idx}}" data-name="{{cards.name}}" wx:key="cards">
+      <view class="card-header">
+        <image class="smallicon" style="float:left;" src="{{cards.icon}}"></image>
+        <text class="card-name">{{cards.name}}</text>
+        <text class="card-time">{{cards.time}}</text>
+      </view>
+      <view class="card-body">
+        <view class="card-info">
+          <view style=" display: flex;justify-content: center;"><image wx:if="{{cards.hasimage}}" src="{{cards.image}}" class="{{cards.class}}" style="width:100rpx;height:100rpx;"></image></view>
+          <view wx:for="{{cards.info}}" wx:for-index="index" wx:for-item="infos" class="{{infos.class}}">{{infos.text}}</view>
+        </view>
+      </view>
+      <view class="card-footer">
+        <text>查看详情</text>
+        <text style="float:right;">＞</text>
+      </view>
+    </navigator>
+  </view>
+</view>

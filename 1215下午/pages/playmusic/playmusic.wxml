@@ -1,0 +1,16 @@
+<!--pages/playmusic/playmusic.wxml-->
+<view class="container">
+  <audio src="{{songs[nowindex].src}}" controls></audio>
+  <view>
+    <input class="name" type="text" wx:for="{{count}}" id="{{item}}"></input>
+  </view>
+  <!-- 16个格口 -->
+  <view class="content">
+    <view class="btn" wx:for="{{songs[nowindex].keyword}}" bindtap="click" data-word="{{item}}">{{item}}</view>
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+    <text class="tip">太难搞定？邀请好友试一试</text>
+    <button class="sos" size="mini">SOS</button>
+  </view>
+</view>

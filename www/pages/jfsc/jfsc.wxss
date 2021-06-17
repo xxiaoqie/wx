@@ -1,0 +1,27 @@
+/* pages/jfsc/jfsc.wxss */
+.banner {
+  width: 100%;
+}
+.name {
+  font-size: 24rpx;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 20rpx 0;
+}
+
+.tag {
+  margin: 10rpx;
+  border:3rpx solid #8EA0C4;
+  color: #6184C7;
+  font-size: 20rpx;
+  padding: 10rpx;
+}
+
+.price {
+  font-size:700;
+  margin: 30rpx 0;
+}
+.box {
+  margin: 10rpx;
+  display: inline-block;
+  width: 46%;
+}
